@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    perspective: 100px;
+    background: none;
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transition: 0.5s ease;
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 31rem;
+    transform: perspective(1000px);
+    border-radius: 30px;
+    padding: 0rem 3rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.car {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(100px) rotateZ(-10deg);
+}
+
+.car img {
+    width: 12rem;
+    z-index: 2;
+}
+
+.circle {
+    width: 13rem;
+    height: 13rem;
+    background: linear-gradient( to right, rgba(245, 70, 6, 0.75), rgba(8, 83, 156, 0.75));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 2rem;
+}
+
+.info h3 {
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+    color: #585658;
+    font-weight: lighter;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bolder;
+    counter-reset: #585858;
+}
+
+button.active {
+    background-color: #585658;
+    color: white;
+}
+
+.purchase button {
+    width: 60%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    margin-top: 16px;
+    padding: 0.5rem 0rem;
+    background: yellow;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+}

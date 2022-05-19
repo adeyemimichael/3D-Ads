@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400&family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="car">
+                <img src="newprojects.png" alt="school bus">
+            </div>
+            <div class="info">
+                <h1 class="title">School Bus</h1>
+                <h3>Newly innovated School bus for school students</h3>
+                <div class="sizes"><button>buy</button>
+                    <button>buy</button>
+                    <button class="active">buy</button>
+                    <button>buy</button>
+                </div>
+                <div class="purchase"><button type="submit">SUBMIT</button></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 40,
+            speed: 500
+        });
+        car.style.transform = "translateZ(200px) rotateZ(-45deg)";
+    </script>
+</body>
+
+</html>
